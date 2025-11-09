@@ -7,21 +7,23 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1 class="name"><a href="index.html">Andrew Wong</a></h1>
-    <nav>
-      <a href="research.html">Research</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="liebestraume.html">Liebesträume</a>
+  <header class="subpage-header">
+    <nav class="nav-with-name">
+      <a href="index.html" class="nav-name">Andrew Wong</a>
+      <div class="nav-links">
+        <a href="research.html">Research</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="liebestraume.html">Liebesträume</a>
+      </div>
     </nav>
   </header>
 
   <main class="project-page">
-    <h2>Projects</h2>
+    <h1 class="page-title">Projects</h1>
 
     <section class="project">
       <h3>Stanford Sherlock</h3>
-      <p>This project analyzes SLURM job data to summarize resource usage and outcomes for dashboard analytics.</p>
+      <p>This project analyzes SLURM job data from Stanford's Sherlock cluster to summarize user activity and job outcomes.</p>
       <div class="tags">
         <span>Python</span>
         <span>Next.js</span>
@@ -32,7 +34,7 @@
 
     <section class="project">
       <h3>XiaoPrompt — HackMIT 2025</h3>
-      <p>Reducing LLM token usage by 50% with compression and translation optimization. 2nd place, Smart AI track.</p>
+      <p>Optimizes LLM token usage with lightweight compression and translation. Placed 2nd in Smart AI track.</p>
       <div class="tags">
         <span>AI</span>
         <span>LLM</span>
