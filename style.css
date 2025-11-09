@@ -21,6 +21,7 @@ body {
   to { opacity: 1; }
 }
 
+/* homepage header */
 header {
   display: flex;
   justify-content: space-between;
@@ -36,10 +37,7 @@ header {
   color: var(--link-color);
   transition: opacity 0.3s ease;
 }
-
-.name a:hover {
-  opacity: 0.8;
-}
+.name a:hover { opacity: 0.8; }
 
 nav a {
   margin-left: 2.2rem;
@@ -51,16 +49,14 @@ nav a {
 }
 nav a:hover { opacity: 0.7; }
 
+/* main body */
 main {
   max-width: 720px;
   font-size: 1.05rem;
 }
+main p { margin: 1rem 0; }
 
-main p {
-  margin: 1rem 0;
-}
-
-/* fade-in text effect */
+/* fade-in text */
 .fade-text {
   opacity: 0;
   transform: translateY(10px);
@@ -73,10 +69,7 @@ main p {
 .fade-text:nth-child(5) { animation-delay: 1s; }
 
 @keyframes textFade {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 main a {
@@ -87,6 +80,7 @@ main a {
 }
 main a:hover { opacity: 0.7; }
 
+/* footer */
 footer {
   margin-top: 5rem;
   padding-top: 2rem;
@@ -102,13 +96,16 @@ footer a {
 }
 footer a:hover { opacity: 0.7; }
 
+/* responsive */
 @media (max-width: 768px) {
   body { padding: 2rem; }
   .name a { font-size: 4rem; }
   nav a { margin-left: 1rem; font-size: 1rem; }
   main { font-size: 1rem; }
 }
-.project-page h2 {
+
+/* project / research / lieb pages */
+.project-page h2, .page-title {
   font-size: 5rem;
   font-weight: 700;
   color: var(--link-color);
@@ -120,17 +117,12 @@ footer a:hover { opacity: 0.7; }
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
-
 .project h3 {
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--link-color);
 }
-
-.tags {
-  margin: 1rem 0;
-}
-
+.tags { margin: 1rem 0; }
 .tags span {
   display: inline-block;
   background-color: rgba(58,111,216,0.08);
@@ -140,7 +132,6 @@ footer a:hover { opacity: 0.7; }
   font-size: 0.85rem;
   margin-right: 0.5rem;
 }
-
 .view-link {
   color: var(--link-color);
   text-decoration: none;
@@ -148,11 +139,9 @@ footer a:hover { opacity: 0.7; }
   transition: opacity 0.3s ease;
 }
 .view-link:hover { opacity: 0.7; }
-/* ===== Subpage Navbar: right-aligned, unified typography ===== */
 
-.subpage-header {
-  margin-bottom: 3rem;
-}
+/* ===== Subpage Navbar (name left, links right) ===== */
+.subpage-header { margin-bottom: 3rem; }
 
 .nav-with-name {
   display: flex;
@@ -161,74 +150,44 @@ footer a:hover { opacity: 0.7; }
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding-bottom: 1.2rem;
 }
-
-/* left-aligned name */
 .nav-name {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400; /* same as body */
+  font-weight: 400;
   font-size: 1.05rem;
   color: var(--text-muted);
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
+.nav-name:hover { opacity: 0.6; }
 
-.nav-name:hover {
-  opacity: 0.6;
-}
-
-/* right-aligned links */
 .nav-links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
 .nav-links a {
   margin-left: 2rem;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400; /* same as body text */
+  font-weight: 400;
   font-size: 1.05rem;
   color: var(--link-color);
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
+.nav-links a:hover { opacity: 0.7; }
+.nav-links .active { opacity: 0.5; }
 
-.nav-links a:hover {
-  opacity: 0.7;
-}
-
-.nav-links .active {
-  opacity: 0.5;
-}
-
-/* page title under nav */
 .page-title {
+  margin-top: 2.5rem;
   font-size: 5rem;
   font-weight: 700;
   color: var(--link-color);
   margin-bottom: 3rem;
-  margin-top: 2.5rem;
 }
 
-/* responsive tweaks */
 @media (max-width: 768px) {
-  .nav-with-name {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    justify-content: flex-start;
-    margin-top: 1rem;
-  }
-
-  .nav-links a {
-    margin-left: 1.2rem;
-    font-size: 1rem;
-  }
-
-  .page-title {
-    font-size: 3rem;
-    margin-top: 2rem;
-  }
+  .nav-with-name { flex-direction: column; align-items: flex-start; }
+  .nav-links { justify-content: flex-start; margin-top: 1rem; }
+  .nav-links a { margin-left: 1.2rem; font-size: 1rem; }
+  .page-title { font-size: 3rem; margin-top: 2rem; }
 }
