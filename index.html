@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homepage</title>
   <style>
-      :root {
-  --text-color: #ffffff; 
-  --link-color: #ffffff;     
-  --bg-color: #b3d9ff;        
-}
+    :root {
+      --text-color: #4a90e2;   /* light blue text */
+      --link-color: #357ABD;   /* darker blue for links */
+      --bg-color: #fffdf5;     /* soft cream background */
+    }
 
     body {
       margin: 0;
@@ -18,6 +18,7 @@
       background-color: var(--bg-color);
       color: var(--text-color);
       line-height: 1.7;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     }
 
     header {
@@ -27,9 +28,10 @@
       margin-bottom: 3rem;
     }
 
+    /* Make your name bold */
     .name {
       font-size: 7rem;
-      font-weight: 300;
+      font-weight: 700;
       margin: 0;
       letter-spacing: -0.05em;
     }
@@ -39,16 +41,55 @@
       text-decoration: none;
       color: var(--link-color);
       font-size: 1.1rem;
+      transition: opacity 0.3s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      opacity: 0.6;
     }
 
     main p {
       max-width: 700px;
       margin: 1.5rem 0;
       font-size: 1.1rem;
+    }
+
+    /* Section styling for Liebesträume */
+    #liebestraume {
+      margin-top: 5rem;
+      padding: 2rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    #liebestraume h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    audio {
+      width: 100%;
+      margin: 1rem 0;
+      outline: none;
+    }
+
+    footer {
+      margin-top: 5rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      padding-top: 2rem;
+      color: var(--link-color);
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: var(--link-color);
+      text-decoration: none;
+      margin-right: 1.5rem;
+      transition: opacity 0.3s ease;
+    }
+
+    footer a:hover {
+      opacity: 0.6;
     }
 
     @media (max-width: 768px) {
@@ -58,25 +99,46 @@
       body {
         padding: 2rem;
       }
+      nav a {
+        margin-left: 1rem;
+      }
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1 class="name">[Andrew Wong]</h1>
+    <h1 class="name">[Your Name]</h1>
     <nav>
-      <a href="#">Research</a>
       <a href="#">Projects</a>
-      <a href="#">Personal Blog</a>
+      <a href="#">Writing</a>
+      <a href="#liebestraume">Liebesträume</a>
     </nav>
   </header>
 
   <main>
-    <p>[I have two years left before I turn 20.]</p>
+    <p>[Intro paragraph text goes here]</p>
     <p>[Additional description text here]</p>
     <p>[Links or achievements can go here]</p>
     <p>[Final short paragraph placeholder]</p>
+
+    <!-- 🎵 Liebesträume Section -->
+    <section id="liebestraume">
+      <h2>Liebesträume</h2>
+      <audio controls>
+        <!-- Replace the src link below with your own MP3 or audio file -->
+        <source src="liebestraume.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>[cant fall asleep]</p>
+      <p>[cant fall asleep notes iguess]</p>
+    </section>
   </main>
+
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    <a href="mailto:youremail@example.com">Email</a>
+  </footer>
 </body>
 </html>
