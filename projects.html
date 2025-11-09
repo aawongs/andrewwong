@@ -3,30 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrew Wong</title>
-  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Projects | Andrew Wong</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1 class="name"><a href="index.html" style="text-decoration:none; color:var(--text-color);">Andrew Wong</a></h1>
+    <h1 class="name"><a href="index.html">Andrew Wong</a></h1>
     <nav>
       <a href="research.html">Research</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="liebestraume.html">Liebesträume</a>
     </nav>
   </header>
 
-  <main>
+  <main class="project-page">
     <h2>Projects</h2>
-    <p>[Describe  engineering, outreach, or design projects.]</p>
-  </main>
 
-  <footer>
-    <p>Connect with me:</p>
-    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-    <a href="mailto:youremail@example.com">Email</a>
-  </footer>
+    <section class="project">
+      <h3>Stanford Sherlock</h3>
+      <p>This project analyzes SLURM job data to summarize resource usage and outcomes for dashboard analytics.</p>
+      <div class="tags">
+        <span>Python</span>
+        <span>Next.js</span>
+        <span>SLURM</span>
+      </div>
+      <a href="#" class="view-link">View Dashboard →</a>
+    </section>
+
+    <section class="project">
+      <h3>XiaoPrompt — HackMIT 2025</h3>
+      <p>Reducing LLM token usage by 50% with compression and translation optimization. 2nd place, Smart AI track.</p>
+      <div class="tags">
+        <span>AI</span>
+        <span>LLM</span>
+        <span>Python</span>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
