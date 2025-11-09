@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  padding: 4rem 8%;
+  padding: 3rem 8%;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-muted);
@@ -20,20 +20,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem; /* reduced gap below name */
 }
 
 .name a {
-  font-size: 5.5rem;
+  font-size: 6.5rem; /* larger name */
   font-weight: 700;
   letter-spacing: -0.04em;
   text-decoration: none;
   color: var(--link-color);
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease, color 0.3s ease;
 }
 
 .name a:hover {
-  color: #2a5fc0;
+  opacity: 0.8; /* subtle fade on hover */
 }
 
 nav a {
@@ -42,11 +42,11 @@ nav a {
   color: var(--link-color);
   font-size: 1.1rem;
   font-weight: 400;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-  color: #2a5fc0;
+  opacity: 0.7; /* consistent hover fade */
 }
 
 main {
@@ -62,11 +62,11 @@ main a {
   color: var(--link-color);
   text-decoration: underline;
   text-underline-offset: 3px;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 main a:hover {
-  color: #2a5fc0;
+  opacity: 0.7; /* fade for inline links */
 }
 
 audio {
@@ -75,8 +75,8 @@ audio {
 }
 
 footer {
-  margin-top: 6rem;
-  padding-top: 2.5rem;
+  margin-top: 5rem;
+  padding-top: 2rem;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   font-size: 0.95rem;
   color: var(--text-muted);
@@ -86,16 +86,16 @@ footer a {
   color: var(--link-color);
   text-decoration: none;
   margin-right: 1.5rem;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 footer a:hover {
-  color: #2a5fc0;
+  opacity: 0.7; /* uniform hover fade */
 }
 
 @media (max-width: 768px) {
   body { padding: 2rem; }
-  .name a { font-size: 3.2rem; }
+  .name a { font-size: 3.8rem; }
   nav a { margin-left: 1rem; font-size: 1rem; }
   main { font-size: 1rem; }
 }
