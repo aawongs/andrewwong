@@ -467,3 +467,7 @@ audio:hover::-webkit-media-controls-panel {
     width: 100%;
   }
 }
+.pub-title,
+.project h3 {
+  color: #0b0b0b; /* true black for strong contrast */
+}
