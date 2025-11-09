@@ -3,34 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrew Wong</title>
-  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Liebesträume | Andrew Wong</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 class="name"><a href="index.html" style="text-decoration:none; color:var(--text-color);">Andrew Wong</a></h1>
-    <nav>
-      <a href="research.html">Research</a>
-      <a href="projects.html">Projects</a>
-      <a href="liebestraume.html">Liebesträume</a>
+  <header class="subpage-header">
+    <nav class="nav-with-name">
+      <a href="index.html" class="nav-name">Andrew Wong</a>
+      <div class="nav-links">
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="liebestraume.html" class="active">Liebesträume</a>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <h2>Liebesträume</h2>
-    <audio controls>
-      <source src="liebestraum.mp3" type="audio/mpeg">
-      your browser doesn't support music :(
-    </audio>
-    <p>last update: saturday (11/9/25)</p>
-  </main>
+  <main class="project-page">
+    <h1 class="page-title">Liebesträume</h1>
 
-  <footer>
-    <p>Connect with me:</p>
-    <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank">LinkedIn</a>
-    <a href="aawong@umich.edu">Email</a>
-  </footer>
+    <section class="project">
+      <p>“Liebesträume” — German for “Dreams of Love.”  
+      This page is a small, personal space for sound and reflection.</p>
+
+      <audio controls>
+        <source src="liebestraum.mp3" type="audio/mpeg" />
+        Your browser doesn't support audio playback.
+      </audio>
+
+      <p><em>Last updated: Saturday (11/9/25)</em></p>
+    </section>
+  </main>
 </body>
 </html>
