@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andrew Wong</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage</title>
   <style>
+    :root {
+      --text-color: #1b4d2b; /* deep green */
+      --link-color: #1b4d2b;
+      --bg-color: #ffffff;
+    }
+
     body {
-      font-family: 'Helvetica', sans-serif;
-      background-color: #f8fbff;
-      color: #00203f;
       margin: 0;
-      padding: 0;
+      padding: 3rem 8%;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.7;
     }
+
     header {
-      background-color: #5d8aa8;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 3rem;
     }
+
+    .name {
+      font-size: 7rem;
+      font-weight: 300;
+      margin: 0;
+      letter-spacing: -0.05em;
+    }
+
     nav a {
-      color: white;
-      margin: 0 10px;
+      margin-left: 2rem;
       text-decoration: none;
-      font-weight: bold;
+      color: var(--link-color);
+      font-size: 1.1rem;
     }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+    nav a:hover {
+      text-decoration: underline;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #5d8aa8;
-      font-size: 0.9rem;
+
+    main p {
+      max-width: 700px;
+      margin: 1.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+      .name {
+        font-size: 3.5rem;
+      }
+      body {
+        padding: 2rem;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Andrew Wong</h1>
+    <h1 class="name">[Your Name]</h1>
     <nav>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#">Projects</a>
+      <a href="#">Writing</a>
+      <a href="#">Press</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a neuroscience and public health student at the University of Michigan interested in sleep, circadian rhythms, and equitable health innovation.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects & Research</h2>
-    <ul>
-      <li><strong>Light and Sleep Study</strong> — Examining wavelength effects on circadian alignment.</li>
-      <li><strong>M-HEAL DRIP Project</strong> — Engineering low-cost diabetes interventions in Peñasco.</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:andrew@example.com">andrew@example.com</a></p>
-  </section>
-
-  <footer>© 2025 Andrew Wong</footer>
+  <main>
+    <p>[Intro paragraph text goes here]</p>
+    <p>[Additional description text here]</p>
+    <p>[Links or achievements can go here]</p>
+    <p>[Final short paragraph placeholder]</p>
+  </main>
 </body>
 </html>
