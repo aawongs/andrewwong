@@ -10,6 +10,8 @@
   --divider: rgba(0, 0, 0, 0.08);
 }
 
+/* ---------- GENERAL BODY ---------- */
+
 body {
   background-color: var(--background);
   color: var(--text);
@@ -19,7 +21,7 @@ body {
   line-height: 1.7;
 }
 
-/* ---------- HEADER & NAVBAR ---------- */
+/* ---------- NAVBAR ---------- */
 
 header {
   display: flex;
@@ -52,14 +54,10 @@ nav a:hover {
   opacity: 0.6;
 }
 
-/* ---------- MAIN CONTENT ---------- */
-
-main {
-  max-width: 900px;
-}
+/* ---------- MAIN HEADERS ---------- */
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   margin-bottom: 1rem;
   color: var(--accent);
   font-weight: 700;
@@ -78,7 +76,8 @@ p {
   margin: 1rem 0;
 }
 
-/* Links within paragraphs */
+/* ---------- LINKS ---------- */
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -109,18 +108,33 @@ footer a {
   font-weight: 600;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* ---------- HOME PAGE TITLE ---------- */
+.home-title {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  letter-spacing: -0.03em;
+}
 
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
   body {
     padding: 2rem;
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
+  }
+
+  .home-title {
+    font-size: 4rem;
+    text-align: left;
   }
 
   nav {
-    gap: 1.2rem;
+    gap: 1rem;
   }
 }
