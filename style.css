@@ -140,16 +140,22 @@ footer a:hover { opacity: 0.7; }
 }
 .view-link:hover { opacity: 0.7; }
 
-/* ===== Subpage Navbar (name left, links right) ===== */
-.subpage-header { margin-bottom: 3rem; }
+/* ===== Subpage Navbar: right-aligned, unified typography ===== */
 
-.nav-with-name {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.subpage-header {
+  margin-bottom: 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding-bottom: 1.2rem;
 }
+
+/* full-width flex container for name + links */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* pushes name left, nav right */
+  align-items: center;
+  width: 100%;
+}
+
 .nav-name {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
@@ -158,13 +164,16 @@ footer a:hover { opacity: 0.7; }
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
+
 .nav-name:hover { opacity: 0.6; }
 
+/* links on right side */
 .nav-links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .nav-links a {
   margin-left: 2rem;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -174,9 +183,11 @@ footer a:hover { opacity: 0.7; }
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
+
 .nav-links a:hover { opacity: 0.7; }
 .nav-links .active { opacity: 0.5; }
 
+/* page title */
 .page-title {
   margin-top: 2.5rem;
   font-size: 5rem;
@@ -185,9 +196,25 @@ footer a:hover { opacity: 0.7; }
   margin-bottom: 3rem;
 }
 
+/* responsive */
 @media (max-width: 768px) {
-  .nav-with-name { flex-direction: column; align-items: flex-start; }
-  .nav-links { justify-content: flex-start; margin-top: 1rem; }
-  .nav-links a { margin-left: 1.2rem; font-size: 1rem; }
-  .page-title { font-size: 3rem; margin-top: 2rem; }
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    margin-left: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .page-title {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
 }
