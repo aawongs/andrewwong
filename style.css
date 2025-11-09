@@ -148,3 +148,53 @@ footer a:hover { opacity: 0.7; }
   transition: opacity 0.3s ease;
 }
 .view-link:hover { opacity: 0.7; }
+/* ===== Subpage Layout: name in nav, title replaces header name ===== */
+
+.subpage-header {
+  margin-bottom: 3rem;
+}
+
+.nav-with-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-bottom: 1.2rem;
+}
+
+.nav-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-name:hover {
+  opacity: 0.6;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 1.05rem;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.nav-links .active {
+  opacity: 0.5;
+}
+
+/* Large page title (replaces big name) */
+.page-title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--link-color);
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
