@@ -1,75 +1,114 @@
-:root {
-  --text-color: #4a90e2;    /* light blue text */
-  --link-color: #4a90e2;    /* darker blue links */
-  --bg-color: #fffdf5;      /* cream background */
+/* One place to load the font for ALL pages */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ---------- THEME ---------- */
+:root{
+  --background:#fffdf5;          /* cream */
+  --text:#1b3a57;                 /* blue-gray */
+  --accent:#4a90e2;               /* cornflower blue */
+  --accent-hover:#3b7ac8;         /* hover */
+  --divider: rgba(0,0,0,0.08);
 }
 
-body {
-  margin: 0;
-  padding: 3rem 8%;
+/* ---------- BASE ---------- */
+*{ box-sizing:border-box; }
+
+html,body{
+  margin:0;
+  padding:0;
+}
+
+body{
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background: var(--background);
+  color: var(--text);
   line-height: 1.7;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 3rem;
+/* a simple centered wrapper so spacing is identical on all pages */
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 12%;
 }
 
-.name {
-  font-size: 5rem;
+/* ---------- HEADER (shared) ---------- */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:2rem;
+  margin-bottom:3rem;
+}
+
+/* site name (brand) */
+.brand{
+  margin:0;
+  color: var(--accent);
   font-weight: 700;
-  margin: 0;
-  letter-spacing: -0.05em;
+  letter-spacing:-0.02em;
+  text-decoration:none;
 }
 
-nav a {
-  margin-left: 2rem;
-  text-decoration: none;
-  color: var(--link-color);
-  font-size: 1.1rem;
-  transition: opacity 0.3s ease;
+/* nav (only visible on subpages via body class) */
+.nav{
+  display:flex;
+  gap:2rem;
 }
 
-nav a:hover {
-  opacity: 0.6;
+.nav a{
+  text-decoration:none;
+  color: var(--accent);
+  font-weight:500;
+  font-size:1rem;
+  transition: opacity .25s ease;
+}
+.nav a:hover{ opacity:.6; }
+
+/* ---------- LINKS IN CONTENT ---------- */
+a{
+  color: var(--accent);
+  text-decoration:none;
+  font-weight:500;
+  font-size:1.1rem;       /* bigger links as requested */
+  transition: opacity .25s ease;
+}
+a:hover{ opacity:.6; }
+
+/* ---------- TITLES ---------- */
+h1{
+  color: var(--accent);
+  font-weight:700;
+  margin: 0 0 1rem 0;
+}
+h2{
+  color: var(--accent);
+  font-weight:600;
+  margin: 3rem 0 .75rem 0;
 }
 
-main {
-  max-width: 800px;
-}
+/* HOME vs SUBPAGES sizing */
+body.home .brand{ font-size: 6rem; }      /* big name on home */
+body.page  .brand{ font-size: 1.4rem; }   /* compact name on subpages */
 
-audio {
-  width: 100%;
-  margin: 1rem 0;
-}
+body.home h1.hero{ font-size: 4.5rem; }   /* optional hero if you use it */
+body.page h1{ font-size: 4.5rem; }        /* big section titles on subpages */
 
-footer {
-  margin-top: 5rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  padding-top: 2rem;
-  color: var(--link-color);
-  font-size: 1rem;
-}
+/* hide nav on HOME only */
+body.home .nav{ display:none; }
 
-footer a {
-  color: var(--link-color);
-  text-decoration: none;
-  margin-right: 1.5rem;
-  transition: opacity 0.3s ease;
+/* ---------- FOOTER ---------- */
+footer{
+  border-top:1px solid var(--divider);
+  margin-top:5rem;
+  padding-top:1.5rem;
+  font-size:.95rem;
 }
+footer a{ margin-right:1.5rem; }
 
-footer a:hover {
-  opacity: 0.6;
-}
-
-@media (max-width: 768px) {
-  .name { font-size: 3rem; }
-  body { padding: 2rem; }
-  nav a { margin-left: 1rem; }
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px){
+  .wrapper{ padding:2rem; }
+  body.home .brand{ font-size: 3.8rem; }
+  body.page h1{ font-size: 3rem; }
 }
