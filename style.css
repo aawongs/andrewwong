@@ -372,3 +372,63 @@ audio:hover::-webkit-media-controls-panel {
     font-size: 3rem;
   }
 }
+<style>
+/* ===== Floating audio (Liebesträume) ===== */
+/* Why: fixed so it “follows” as you scroll and sits just below the subpage header */
+.floating-audio{
+  position: fixed;
+  top: 92px;                    /* adjust if your header height changes */
+  right: max(8%, 24px);         /* align with body padding (8%) but keep a minimum */
+  z-index: 1000;
+  background: rgba(255, 253, 247, 0.9);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 999px;
+  padding: 6px 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  backdrop-filter: blur(6px);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.floating-audio:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+  background: rgba(255, 253, 247, 1);
+}
+.floating-audio audio{
+  width: 260px;                 /* player width; tweak as you like */
+  height: 32px;
+}
+
+/* Optional tint for WebKit controls (Chrome/Safari/Edge) */
+.floating-audio audio::-webkit-media-controls-panel{
+  background-color: rgba(58,111,216,0.10);
+  border-radius: 20px;
+}
+.floating-audio audio:hover::-webkit-media-controls-panel{
+  background-color: rgba(58,111,216,0.16);
+}
+.floating-audio audio::-webkit-media-controls-play-button{
+  background-color: var(--link-color);
+  border-radius: 50%;
+  transform: scale(.9);
+}
+.floating-audio audio::-webkit-media-controls-current-time-display,
+.floating-audio audio::-webkit-media-controls-time-remaining-display{
+  color: var(--link-color);
+}
+
+/* Keep content readable on small screens: place audio inline */
+@media (max-width: 900px){
+  .floating-audio{
+    position: static;           /* falls back into the flow */
+    right: auto;
+    top: auto;
+    margin-bottom: 1rem;
+    box-shadow: none;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    backdrop-filter: none;
+  }
+  .floating-audio audio{ width: 100%; }
+}
+</style>
