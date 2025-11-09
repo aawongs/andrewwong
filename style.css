@@ -218,3 +218,25 @@ footer a:hover { opacity: 0.7; }
     margin-top: 2rem;
   }
 }
+/* ===== Footer Icon Styling ===== */
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  filter: invert(37%) sepia(72%) saturate(372%) hue-rotate(192deg) brightness(90%) contrast(90%);
+  /* This tint matches your --link-color (#3a6fd8) */
+}
+
+.social-icons a:hover img {
+  opacity: 1;
+  transform: scale(1.1);
+  filter: invert(37%) sepia(100%) saturate(800%) hue-rotate(192deg) brightness(90%) contrast(95%);
+}
