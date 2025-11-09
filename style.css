@@ -1,78 +1,126 @@
+/* ------------------ */
+/* Andrew Wong Styles */
+/* ------------------ */
+
 :root {
-  --text-color: #4a90e2;
-  --link-color: cornflowerblue;
-  --bg-color: #fffdf5;
+  --background: #fffdf5;       /* soft cream */
+  --text: #1b3a57;             /* calm blue-gray */
+  --accent: #4a90e2;           /* cornflower blue */
+  --accent-hover: #3b7ac8;     /* darker blue on hover */
+  --divider: rgba(0, 0, 0, 0.08);
 }
 
 body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   margin: 0;
-  padding: 3rem 8%;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  padding: 3rem 12%;
   line-height: 1.7;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-/* NAVBAR STYLING */
+/* ---------- HEADER & NAVBAR ---------- */
+
 header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 3rem;
 }
 
 .name {
-  font-size: 3rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  color: var(--accent);
   margin: 0;
-  letter-spacing: -0.03em;
 }
 
-/* 🔗 Link styling */
-a {
-  color: var(--link-color);
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  font-size: 1rem;
   text-decoration: none;
+  color: var(--accent);
   font-weight: 500;
-  font-size: 1.2rem;  /* bigger link text */
-  transition: opacity 0.3s ease;
+  transition: opacity 0.25s ease, color 0.25s ease;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+
+main {
+  max-width: 900px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.05rem;
+  margin: 1rem 0;
+}
+
+/* Links within paragraphs */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.25s ease;
 }
 
 a:hover {
   opacity: 0.6;
 }
 
-/* Subpage main content area */
-main {
-  max-width: 800px;
-}
-
-audio {
-  width: 100%;
-  margin: 1rem 0;
-}
+/* ---------- FOOTER ---------- */
 
 footer {
+  border-top: 1px solid var(--divider);
   margin-top: 5rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  padding-top: 2rem;
-  color: var(--link-color);
-  font-size: 1rem;
+  padding-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text);
 }
 
 footer a {
-  color: var(--link-color);
-  text-decoration: none;
   margin-right: 1.5rem;
-  transition: opacity 0.3s ease;
+  font-weight: 600;
 }
 
-footer a:hover {
-  opacity: 0.6;
-}
+/* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 768px) {
-  .name { font-size: 2rem; }
-  body { padding: 2rem; }
-  nav a { margin-left: 1rem; }
+  body {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  nav {
+    gap: 1.2rem;
+  }
 }
