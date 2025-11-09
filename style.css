@@ -376,22 +376,20 @@ audio:hover::-webkit-media-controls-panel {
 /* Fixed to top-right below nav bar and follows scroll */
 .floating-audio {
   position: fixed;
-  top: 100px; /* adjust depending on header height */
+  top: 100px;
   right: 8%;
   z-index: 1000;
-  background: rgba(255, 253, 247, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 999px;
-  padding: 6px 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  backdrop-filter: blur(6px);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  background: transparent; /* fully transparent */
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  transition: transform 0.2s ease;
 }
 
 .floating-audio:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
-  background: rgba(255, 253, 247, 1);
 }
 
 .floating-audio audio {
