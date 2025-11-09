@@ -1,76 +1,68 @@
+<!-- /liebestraume/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrew Wong</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Liebesträume | Andrew Wong</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Subpage header: Andrew Wong (left), nav links (right) -->
+  <!-- Subpage header (unchanged) -->
   <header class="subpage-header">
     <div class="nav-container">
-      <a href="index.html" class="nav-name">Andrew Wong</a>
+      <a href="/" class="nav-name">Andrew Wong</a>
       <nav class="nav-links">
-        <a href="research.html">Research</a>
-        <a href="projects.html">Projects</a>
-        <a href="liebestraume.html" class="active">Liebesträume</a>
+        <a href="/research/">Research</a>
+        <a href="/projects/">Projects</a>
+        <a href="/liebestraume/" class="active">Liebesträume</a>
       </nav>
     </div>
   </header>
 
-<main class="project-page">
-  <section class="project">
-    <!-- Header + audio -->
-    <div class="lieb-header">
-      <h1 class="page-title">Liebesträume</h1>
-      <div class="audio-wrapper">
-        <audio controls>
-          <source src="../liebestraum.mp3" type="audio/mpeg" />
-          Your browser doesn’t support audio playback.
-        </audio>
-      </div>
-    </div>
-
-    <p>“Liebesträume” — German for “Dreams of Love.”  
-    A personal space for sound and reflection.</p>
-    <p><em>Last updated: Saturday (11/9/25)</em></p>
-  </section>
-
-  <!-- Publications -->
-  <section class="publication">
-    <p class="pub-meta">August 2025 • <span class="pub-source">The New York Times</span></p>
-    <h3 class="pub-title">8 Women, 4 Bedrooms and 1 Cause: Breaking A.I.’s Glass Ceiling</h3>
-    <p class="pub-desc">
-      Featured on the front page of New York Times Technology in a spotlight about the growing movement of
-      female hacker houses in Silicon Valley, highlighting the AI and tech innovation happening at FoundHer House.
-    </p>
-    <a href="https://www.nytimes.com" class="pub-link" target="_blank">Read article →</a>
-  </section>
-
-  <section class="publication">
-    <p class="pub-meta">May 2024 • <span class="pub-source">University of Michigan</span></p>
-    <h3 class="pub-title">The Neuroscience of Economic Decision-Making</h3>
-    <p class="pub-desc">
-      A research paper exploring the neural correlates of risk-based decision processes and their impact on
-      market behavior and rationality.
-    </p>
-    <a href="https://example.com/paper.pdf" class="pub-link" target="_blank">Read paper →</a>
-  </section>
-</main>
-<footer>
-  <p><em>Last updated: Saturday (11/9/25)</em></p>
-  <p>Connect with me:</p>
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank" aria-label="LinkedIn">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Logo" />
-    </a>
-    <a href="mailto:aawong@umich.edu" aria-label="Email">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email Logo" />
-    </a>
+  <!-- 🔊 Floating audio: sits top-right, follows on scroll -->
+  <div class="floating-audio" aria-label="Liebesträume audio player">
+    <audio controls>
+      <source src="/liebestraum.mp3" type="audio/mpeg" />
+      Your browser doesn’t support audio playback.
+    </audio>
   </div>
-</footer>
+
+  <main class="project-page">
+    <section class="project">
+      <h1 class="page-title">Liebesträume</h1>
+      <p>“Liebesträume” — German for “Dreams of Love.” A personal space for sound and reflection.</p>
+      <p><em>Last updated: Saturday (11/9/25)</em></p>
+    </section>
+
+    <!-- Publications -->
+    <section class="publication">
+      <p class="pub-meta">August 2025 • <span class="pub-source">The New York Times</span></p>
+      <h3 class="pub-title">8 Women, 4 Bedrooms and 1 Cause: Breaking A.I.’s Glass Ceiling</h3>
+      <p class="pub-desc">Featured on the front page of New York Times Technology in a spotlight about the growing movement of female hacker houses in Silicon Valley, highlighting the AI and tech innovation happening at FoundHer House.</p>
+      <a href="https://www.nytimes.com" class="pub-link" target="_blank" rel="noopener">Read article →</a>
+    </section>
+
+    <section class="publication">
+      <p class="pub-meta">May 2024 • <span class="pub-source">University of Michigan</span></p>
+      <h3 class="pub-title">The Neuroscience of Economic Decision-Making</h3>
+      <p class="pub-desc">A research paper exploring the neural correlates of risk-based decision processes and their impact on market behavior and rationality.</p>
+      <a href="https://example.com/paper.pdf" class="pub-link" target="_blank" rel="noopener">Read paper →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Connect with me:</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank" aria-label="LinkedIn" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="mailto:aawong@umich.edu" aria-label="Email">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email" />
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
