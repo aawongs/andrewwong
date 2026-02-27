@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andrew Wong</title>
   <link rel="icon" type="image/png" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="fade-in">
+<body>
   <header>
     <h1 class="name"><a href="/">Andrew Wong</a></h1>
     <nav>
@@ -19,35 +19,48 @@
   </header>
 
   <main>
-    <p class="fade-text"><strong>I have 2 years left before I turn 20.</strong></p>
-    <p class="fade-text">By then, research estimates that I will have slept for 6.6 years — 2409 days, 57816 hours or 3,469,000 minutes.</p>
-    <p class="fade-text">——————————————————————————————————————————————</p>
-    <p class="fade-text">fun fact: i learned this 5 years ago, during a night of insomnia.</p>
-    
-    <p class="fade-text"><b>Enticed by this discovery,</b></p>
-    <p class="fade-text">I decided to apply to <a href="https://www.imsa.edu/" target="_blank">IMSA</a>, hoping to dive deeper into science.</p>
-    <p class="fade-text">I dove into sleep research my junior year at <a href="https://www.feinberg.northwestern.edu/sites/sleep/index.html" target="_blank">Northwestern's Center of Circadian & Sleep Medicine</a>.</p>
-    <p class="fade-text">I published my <a href="https://doi.org/10.1002/ana.27085" target="_blank">first paper</a> at 16.</p>
-    <p class="fade-text">Then came the <a href="https://ieeexplore.ieee.org/document/10876203" target="_blank">second</a>. Then the <a href="https://doi.org/10.1002/ana.27085" target="_blank">third</a>.</p>
-    <p class="fade-text">I spoke at the <a href="https://mhc.niu.edu/" target="_blank">Minority Health Conference</a>, being 1 of 3 interns selected by the <a href="https://dph.illinois.gov/" target="_blank">IDPH</a> to recieve full funding for this conference.</p>
-    <p class="fade-text"> Months later, I recieved the Youngest Presenter Award at both the <a href="https://www.childneurologysociety.org/annual-meetings/53rd-cns-annual-meeting/" target="_blank">53rd CNS Meeting</a> and <a href="https://hipoct.embs.org/2024/" target="_blank">IEEE HI-POCT 2024</a>.</p>
-      <p class="fade-text">I started a <a href="https://andrewsleeps.com/projects.html" target="_blank">nationwide campus sleep initative</a>, encouraging students like me to reach their sleep goals. </p>
-    <p class="fade-text">My research and advocacy has taught me to embrace insomnia, to seek strength through our flaws.</p>
-    <p class="fade-text">Now, I sleep in Ann Arbor, where I study Neuroscience and Economics at the University of Michigan, hoping to change the way the world sleeps before I leave my teens.</p>
-    
-    <p class="fade-text"><b>But until then, I still have 5840 hours to sleep.</b></p>
+    <div class="hero-grid">
+      <section class="data-card">
+        <p class="terminal-line">$ uptime --human</p>
+        <h2>2 years left before I turn 20.</h2>
+        <p>Research estimates that I will have slept for 6.6 years — 2,409 days, 57,816 hours, and 3,469,000 minutes.</p>
+        <p>This started as an insomnia-night thought experiment. It became the operating system for how I spend my time.</p>
+      </section>
+      <section class="data-card">
+        <p class="terminal-line">$ sleep_stats --live</p>
+        <div class="kpis">
+          <div class="kpi"><strong>5,840</strong><span>hours left to sleep</span></div>
+          <div class="kpi"><strong>3+</strong><span>published papers</span></div>
+          <div class="kpi"><strong>2</strong><span>youngest presenter awards</span></div>
+          <div class="kpi"><strong>1</strong><span>nationwide initiative</span></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="data-card">
+      <p class="terminal-line">$ cat journey.log</p>
+      <p>I applied to <a href="https://www.imsa.edu/" target="_blank">IMSA</a> to pursue science more seriously, then joined sleep research at <a href="https://www.feinberg.northwestern.edu/sites/sleep/index.html" target="_blank">Northwestern's Center of Circadian & Sleep Medicine</a>.</p>
+      <p>I published my first paper at 16, followed by additional work in neurology and engineering: <a href="https://doi.org/10.1002/ana.27085" target="_blank">Annals of Neurology</a> and <a href="https://ieeexplore.ieee.org/document/10876203" target="_blank">IEEE</a>.</p>
+      <p>I presented at the <a href="https://mhc.niu.edu/" target="_blank">Minority Health Conference</a> as one of three interns funded by the <a href="https://dph.illinois.gov/" target="_blank">Illinois Department of Public Health</a>, then received Youngest Presenter awards at the <a href="https://www.childneurologysociety.org/annual-meetings/53rd-cns-annual-meeting/" target="_blank">53rd CNS Annual Meeting</a> and <a href="https://hipoct.embs.org/2024/" target="_blank">IEEE HI-POCT 2024</a>.</p>
+      <p>I also launched a <a href="https://andrewsleeps.com/projects.html" target="_blank">nationwide campus sleep initiative</a> to help students improve sleep habits.</p>
+    </section>
+
+    <section class="data-card">
+      <p class="terminal-line">$ echo "currently"</p>
+      <p>Now I study Neuroscience and Economics at the University of Michigan in Ann Arbor, building research and systems that can change the way people sleep before I leave my teens.</p>
+    </section>
   </main>
 
-<footer>
-  <p>Connect with me:</p>
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank" aria-label="LinkedIn">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Logo" />
-    </a>
-    <a href="mailto:aawong@umich.edu" aria-label="Email">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email Logo" />
-    </a>
-  </div>
-</footer>
+  <footer>
+    <p>Connect with me:</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Logo" />
+      </a>
+      <a href="mailto:aawong@umich.edu" aria-label="Email">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email Logo" />
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
