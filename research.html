@@ -3,78 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrew Wong</title>
+  <title>Andrew Wong | Research</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header matches Liebesträume page -->
-  <header class="subpage-header">
-    <div class="nav-container">
-      <a href="/" class="nav-name">Andrew Wong</a>
-      <nav class="nav-links">
-        <a href="research.html" class="active">Research</a>
-        <a href="projects.html">Projects</a>
-        <a href="liebestraume.html">Liebesträume</a>
-      </nav>
-    </div>
+  <header class="site-header">
+    <a class="brand" href="/">Andrew Wong</a>
+    <nav class="top-nav">
+      <a href="research.html" class="active">Research</a>
+      <a href="projects.html">Experience</a>
+      <a href="achievements.html">Achievements</a>
+    </nav>
   </header>
 
-  <main class="project-page">
-    <h1 class="page-title">Research</h1>
-
-    <section class="project">
-      <h3>Investigating the Impact of Light Wavelength Exposure on Sleep Health</h3>
-      <p>Center of Circadian & Sleep Medicine at Northwestern Feinberg School of Medicine</p>
-      <div class="tags">
-        <span>Sleep</span>
-        <span>R</span>
-        <span>Actigraphy Anaylsis</span>
-      </div>
+  <main class="page-wrap">
+    <section class="block">
+      <p class="eyebrow">Research Projects (Most recent → least recent)</p>
+      <h1 class="page-title">Research Grid</h1>
+      <p>Hover each bubble card to preview momentum; click to expand and read methods, outcomes, and accomplishments.</p>
     </section>
 
-    <section class="project">
-      <h3>Evaluating Home-Based EEG Systems for Public Health Telemonitoring</h3>
-      <p>Neural Engineering Lab at University of Illinois</p>
-      <div class="tags">
-        <span>Meta-Anaylsis</span>
-        <span> Data Modeling</span>
-        <span>TeleHeatlh</span>
-      </div>
-    </section>
-    
-        <section class="project">
-      <h3>Understanding Disparities in Healthcare Accessibility</h3>
-      <p>Illinois Department of Public Health</p>
-      <div class="tags">
-        <span>Preventative Health</span>
-        <span>R</span>
-        <span>Data Modeling</span>
-      </div>
-    </section>
-    
-        <section class="project">
-      <h3>Coming Soon</h3>
-      <p>University of Michigan</p>
-      <div class="tags">
-        <span>Sleep</span>
+    <section class="bubble-grid">
+      <details class="bubble-card" open>
+        <summary>
+          <span class="bubble-date">2026</span>
+          <h3>Computational Modeling of Sleep Opportunity in College Students</h3>
+          <p>University of Michigan • Computational Neuroscience Researcher</p>
+        </summary>
+        <div class="bubble-details">
+          <ul>
+            <li>Built computational pipelines to quantify sleep opportunity under academic and social schedule constraints.</li>
+            <li>Integrated statistical and machine-learning models across behavioral and neural signals.</li>
+            <li>Prepared manuscript: <em>SLEEP</em>, vol. 40 (2026).</li>
+          </ul>
+        </div>
+      </details>
 
-      </div>
+      <details class="bubble-card">
+        <summary>
+          <span class="bubble-date">2025</span>
+          <h3>Home-Based EEG Systems for Public Health Telemonitoring</h3>
+          <p>University of Illinois • Neural Engineering Lab</p>
+        </summary>
+        <div class="bubble-details">
+          <ul>
+            <li>Evaluated feasibility of low-cost home EEG tools for remote care settings.</li>
+            <li>Analyzed access inequities using public datasets + geospatial/statistical methods.</li>
+            <li>Published in IEEE Xplore, vol. 4 (2025); presented at IEEE HI-POCT 2024.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="bubble-card">
+        <summary>
+          <span class="bubble-date">2024</span>
+          <h3>Behavioral Interventions for Adolescent Insomnia</h3>
+          <p>Northwestern Feinberg School of Medicine</p>
+        </summary>
+        <div class="bubble-details">
+          <ul>
+            <li>Investigated efficacy of behavioral interventions including CBT-I for adolescent sleep outcomes.</li>
+            <li>Processed actigraphy, environmental, and questionnaire-derived metrics.</li>
+            <li>Published in <em>Annals of Neurology</em>, vol. 53 (2024); presented at 53rd CNS Meeting.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="bubble-card">
+        <summary>
+          <span class="bubble-date">2024</span>
+          <h3>Healthcare Accessibility and Disparities Analysis</h3>
+          <p>Illinois Department of Public Health</p>
+        </summary>
+        <div class="bubble-details">
+          <ul>
+            <li>Modeled public-health datasets in R to identify trends impacting resource allocation.</li>
+            <li>Created automated reporting + publication-ready visual workflows.</li>
+            <li>Presented at Illinois Minority Health Conference as funded intern presenter.</li>
+          </ul>
+        </div>
+      </details>
     </section>
-    
   </main>
 
-<footer>
-  <p>Connect with me:</p>
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank" aria-label="LinkedIn">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Logo" />
-    </a>
-    <a href="mailto:aawong@umich.edu" aria-label="Email">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email Logo" />
-    </a>
-  </div>
-</footer>
+  <footer class="site-footer">
+    <p>Connect with me:</p>
+    <div class="social-icons">
+      <a href="mailto:aawong@umich.edu">aawong@umich.edu</a>
+      <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="tel:3096642575">309-664-2575</a>
+    </div>
+  </footer>
 </body>
 </html>
