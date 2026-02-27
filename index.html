@@ -5,58 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andrew Wong</title>
   <link rel="icon" type="image/png" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="/">Andrew Wong</a>
-    <nav class="top-nav">
+  <header>
+    <h1 class="name"><a href="/">Andrew Wong</a></h1>
+    <nav>
       <a href="research.html">Research</a>
       <a href="projects.html">Experience</a>
       <a href="achievements.html">Achievements</a>
     </nav>
   </header>
 
-  <main class="page-wrap">
-    <section class="block hero-block">
-      <p class="eyebrow">Now / Next</p>
-      <h1>Computational neuroscience student building data-driven systems for sleep and public health.</h1>
-      <p>I’m currently at the University of Michigan (Neuroscience + Data Science), and I want to build research + engineering tools that make sleep and care more accessible at scale.</p>
-      <div class="stats-grid">
-        <article><span>Current focus</span><strong>Brain-behavior modeling</strong></article>
-        <article><span>Domain</span><strong>Sleep health + public health</strong></article>
-        <article><span>Methods</span><strong>ML, statistical modeling, pipelines</strong></article>
-        <article><span>Goal</span><strong>Translational impact before 20</strong></article>
-      </div>
+  <main>
+    <div class="hero-grid">
+      <section class="data-card">
+        <p class="terminal-line">$ uptime --human</p>
+        <h2>2 years left before I turn 20.</h2>
+        <p>Research estimates that I will have slept for 6.6 years — 2,409 days, 57,816 hours, and 3,469,000 minutes.</p>
+        <p>This started as an insomnia-night thought experiment. It became the operating system for how I spend my time.</p>
+      </section>
+      <section class="data-card">
+        <p class="terminal-line">$ sleep_stats --live</p>
+        <div class="kpis">
+          <div class="kpi"><strong>5,840</strong><span>hours left to sleep</span></div>
+          <div class="kpi"><strong>3+</strong><span>published papers</span></div>
+          <div class="kpi"><strong>2</strong><span>youngest presenter awards</span></div>
+          <div class="kpi"><strong>1</strong><span>nationwide initiative</span></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="data-card">
+      <p class="terminal-line">$ cat journey.log</p>
+      <p>I applied to <a href="https://www.imsa.edu/" target="_blank">IMSA</a> to pursue science more seriously, then joined sleep research at <a href="https://www.feinberg.northwestern.edu/sites/sleep/index.html" target="_blank">Northwestern's Center of Circadian & Sleep Medicine</a>.</p>
+      <p>I published my first paper at 16, followed by additional work in neurology and engineering: <a href="https://doi.org/10.1002/ana.27085" target="_blank">Annals of Neurology</a> and <a href="https://ieeexplore.ieee.org/document/10876203" target="_blank">IEEE</a>.</p>
+      <p>I presented at the <a href="https://mhc.niu.edu/" target="_blank">Minority Health Conference</a> as one of three interns funded by the <a href="https://dph.illinois.gov/" target="_blank">Illinois Department of Public Health</a>, then received Youngest Presenter awards at the <a href="https://www.childneurologysociety.org/annual-meetings/53rd-cns-annual-meeting/" target="_blank">53rd CNS Annual Meeting</a> and <a href="https://hipoct.embs.org/2024/" target="_blank">IEEE HI-POCT 2024</a>.</p>
+      <p>I also launched a <a href="https://andrewsleeps.com/projects.html" target="_blank">nationwide campus sleep initiative</a> to help students improve sleep habits.</p>
     </section>
 
-    <section class="block">
-      <p class="eyebrow">Education</p>
-      <ul class="timeline">
-        <li><span>Aug 2025 – May 2029</span><div><strong>University of Michigan, Ann Arbor</strong><p>Double concentration in Neuroscience and Data Science.</p></div></li>
-        <li><span>Aug 2022 – Jun 2025</span><div><strong>Illinois Mathematics and Science Academy</strong><p>Research-focused STEM curriculum.</p></div></li>
-      </ul>
-    </section>
-
-    <section class="block">
-      <p class="eyebrow">Quick links</p>
-      <div class="quick-grid">
-        <a class="quick-card" href="research.html"><strong>Research</strong><p>Explore projects from most recent to least, with expandable detail cards.</p></a>
-        <a class="quick-card" href="projects.html"><strong>Experience</strong><p>Work and leadership timeline across neuroscience, data, and medical engineering.</p></a>
-        <a class="quick-card" href="achievements.html"><strong>Achievements</strong><p>Publications/conferences, awards, and certifications in categorized bubbles.</p></a>
-      </div>
+    <section class="data-card">
+      <p class="terminal-line">$ echo "currently"</p>
+      <p>Now I study Neuroscience and Economics at the University of Michigan in Ann Arbor, building research and systems that can change the way people sleep before I leave my teens.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <p>Connect with me:</p>
     <div class="social-icons">
-      <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn logo" />
+      <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Logo" />
       </a>
       <a href="mailto:aawong@umich.edu" aria-label="Email">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email logo" />
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email Logo" />
       </a>
     </div>
   </footer>
