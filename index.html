@@ -5,49 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andrew Wong</title>
   <link rel="icon" type="image/png" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="fade-in">
-  <header>
-    <h1 class="name"><a href="/">Andrew Wong</a></h1>
-    <nav>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Andrew Wong</a>
+    <nav class="top-nav">
       <a href="research.html">Research</a>
-      <a href="projects.html">Projects</a>
-      <a href="liebestraume.html">Liebesträume</a>
+      <a href="projects.html">Experience</a>
+      <a href="achievements.html">Achievements</a>
     </nav>
   </header>
 
-  <main>
-    <p class="fade-text"><strong>I have 2 years left before I turn 20.</strong></p>
-    <p class="fade-text">By then, research estimates that I will have slept for 6.6 years — 2409 days, 57816 hours or 3,469,000 minutes.</p>
-    <p class="fade-text">——————————————————————————————————————————————</p>
-    <p class="fade-text">fun fact: i learned this 5 years ago, during a night of insomnia.</p>
-    
-    <p class="fade-text"><b>Enticed by this discovery,</b></p>
-    <p class="fade-text">I decided to apply to <a href="https://www.imsa.edu/" target="_blank">IMSA</a>, hoping to dive deeper into science.</p>
-    <p class="fade-text">I dove into sleep research my junior year at <a href="https://www.feinberg.northwestern.edu/sites/sleep/index.html" target="_blank">Northwestern's Center of Circadian & Sleep Medicine</a>.</p>
-    <p class="fade-text">I published my <a href="https://doi.org/10.1002/ana.27085" target="_blank">first paper</a> at 16.</p>
-    <p class="fade-text">Then came the <a href="https://ieeexplore.ieee.org/document/10876203" target="_blank">second</a>. Then the <a href="https://doi.org/10.1002/ana.27085" target="_blank">third</a>.</p>
-    <p class="fade-text">I spoke at the <a href="https://mhc.niu.edu/" target="_blank">Minority Health Conference</a>, being 1 of 3 interns selected by the <a href="https://dph.illinois.gov/" target="_blank">IDPH</a> to recieve full funding for this conference.</p>
-    <p class="fade-text"> Months later, I recieved the Youngest Presenter Award at both the <a href="https://www.childneurologysociety.org/annual-meetings/53rd-cns-annual-meeting/" target="_blank">53rd CNS Meeting</a> and <a href="https://hipoct.embs.org/2024/" target="_blank">IEEE HI-POCT 2024</a>.</p>
-      <p class="fade-text">I started a <a href="https://andrewsleeps.com/projects.html" target="_blank">nationwide campus sleep initative</a>, encouraging students like me to reach their sleep goals. </p>
-    <p class="fade-text">My research and advocacy has taught me to embrace insomnia, to seek strength through our flaws.</p>
-    <p class="fade-text">Now, I sleep in Ann Arbor, where I study Neuroscience and Economics at the University of Michigan, hoping to change the way the world sleeps before I leave my teens.</p>
-    
-    <p class="fade-text"><b>But until then, I still have 5840 hours to sleep.</b></p>
+  <main class="page-wrap">
+    <section class="block hero-block">
+      <p class="eyebrow">Now / Next</p>
+      <h1>Computational neuroscience student building data-driven systems for sleep and public health.</h1>
+      <p>I’m currently at the University of Michigan (Neuroscience + Data Science), and I want to build research + engineering tools that make sleep and care more accessible at scale.</p>
+      <div class="stats-grid">
+        <article><span>Current focus</span><strong>Brain-behavior modeling</strong></article>
+        <article><span>Domain</span><strong>Sleep health + public health</strong></article>
+        <article><span>Methods</span><strong>ML, statistical modeling, pipelines</strong></article>
+        <article><span>Goal</span><strong>Translational impact before 20</strong></article>
+      </div>
+    </section>
+
+    <section class="block">
+      <p class="eyebrow">Education</p>
+      <ul class="timeline">
+        <li><span>Aug 2025 – May 2029</span><div><strong>University of Michigan, Ann Arbor</strong><p>Double concentration in Neuroscience and Data Science.</p></div></li>
+        <li><span>Aug 2022 – Jun 2025</span><div><strong>Illinois Mathematics and Science Academy</strong><p>Research-focused STEM curriculum.</p></div></li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <p class="eyebrow">Quick links</p>
+      <div class="quick-grid">
+        <a class="quick-card" href="research.html"><strong>Research</strong><p>Explore projects from most recent to least, with expandable detail cards.</p></a>
+        <a class="quick-card" href="projects.html"><strong>Experience</strong><p>Work and leadership timeline across neuroscience, data, and medical engineering.</p></a>
+        <a class="quick-card" href="achievements.html"><strong>Achievements</strong><p>Publications/conferences, awards, and certifications in categorized bubbles.</p></a>
+      </div>
+    </section>
   </main>
 
-<footer>
-  <p>Connect with me:</p>
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank" aria-label="LinkedIn">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Logo" />
-    </a>
-    <a href="mailto:aawong@umich.edu" aria-label="Email">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email Logo" />
-    </a>
-  </div>
-</footer>
+  <footer class="site-footer">
+    <p>Connect with me:</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/andrewslinkdn/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn logo" />
+      </a>
+      <a href="mailto:aawong@umich.edu" aria-label="Email">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email logo" />
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
